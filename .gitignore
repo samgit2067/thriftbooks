@@ -1,0 +1,72 @@
+# Node modules
+node_modules/
+
+# Playwright specific
+playwright-report/
+test-results/
+playwright/.cache/
+
+# Environment variables and secrets
+.env
+.env.*
+*.env
+auth.json
+
+# Test screenshots and videos
+/screenshots/
+/videos/
+/test-results/
+/blob-report/
+/playwright/.auth/
+
+# IDE files
+.idea/
+.vscode/
+*.code-workspace
+.DS_Store
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Cache
+.npm
+.eslintcache
+.cache
+
+# Rust build and cache
+/target
+**/*.rs.bk
+**/*.rmeta
+**/*.rlib
+**/*.d
+
+# Cargo binaries and configs
+.cargo/
+.env
+
+# System or IDE files
+.DS_Store
+.vscode/
+.idea/
+
+
+cat > .gitignore <<'EOF'
+# macOS
+.DS_Store
+
+# Editors/IDE
+.vscode/
+.idea/
+
+# Rust
+/target
+.cargo/
+**/*.rs.bk
+**/*.rmeta
+**/*.rlib
+**/*.d
+EOF

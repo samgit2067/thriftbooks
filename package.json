@@ -1,0 +1,27 @@
+{
+  "name": "thriftbooks",
+  "version": "1.0.0",
+  "description": "An Automation Framework for Thriftbooks",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:codegen": "playwright codegen",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:smoke:headed": "playwright test --grep @smoke --headed",
+    "test:regression:headed": "playwright test --grep @regression --headed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@faker-js/faker": "^10.1.0",
+    "@playwright/test": "^1.56.1",
+    "dotenv": "^17.2.3"
+  }
+}
